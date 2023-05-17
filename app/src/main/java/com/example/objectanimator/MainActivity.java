@@ -16,11 +16,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView imgView = findViewById(R.id.image);
+        ImageView imgView = findViewById(R.id.api);
         Button btn = findViewById(R.id.btn_animate);
 
         mAnimator = ObjectAnimator.ofFloat(imgView,
                 "y", 1200);
+
 
         btn.setOnClickListener(new View.OnClickListener(){
             @Override
